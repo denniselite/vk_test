@@ -22,8 +22,14 @@ function make_project(id){
             else if (data == "FALSE_AUTH"){
                 alert('Вы должны пройти авторизацию, чтобы выполнить заказ');
             } else {
-                alert('Проект успешно выполнен!');
                 $("#row" + id).empty();
+                var div_ok = "<td colspan='3' id='project_ok' class='project_ok'>Проект успешно выполнен!</td>";
+                $("#row" + id).append(div_ok);
+                $("#project_ok").fadeIn(1500);
+                $("#project_ok").fadeOut(1500, function(){
+                    $("#project_ok").empty();
+                });
+
                 $("#money").empty();
                 $("#money").append(data);
             }

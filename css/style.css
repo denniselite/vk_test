@@ -46,6 +46,10 @@ body{
 	width: 380px;
 	border: 1px solid;
 }
+.projects table .project_ok{
+    text-align: center;
+    color: green;
+}
 .projects .my_table{
     width: 380px;
     border: 1px solid;
