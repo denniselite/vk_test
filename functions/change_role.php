@@ -19,7 +19,7 @@ function change_role(){
         $_SESSION['role_id'] = 2;
     } else if ($_SESSION['role_id'] == "2"){
         $data['role_id'] = 1;
-        $_SESSION['role_id'] = 1;
+        $_SESSION['role_id'] = 1;   
     }
     $STH->execute($data);
 

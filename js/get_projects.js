@@ -16,7 +16,7 @@ function get_projects() {
             if (count_all !== data.all.length) {
                 for (var i = count_all; i < data.all.length; i++) {
                     var html_inner = "" +
-                        "<tr>" +
+                        "<tr id='row"+ data.all[i].id +"'>" +
                         "<td>" + data.all[i].id + "</td>" +
                         "<td>" + data.all[i].desc + "</td>" +
                         "<td>" + data.all[i].price + "</td>" +
@@ -34,6 +34,7 @@ function get_projects() {
                         "<td>" + data.my_work[i].id + "</td>" +
                         "<td>" + data.my_work[i].desc + "</td>" +
                         "<td>" + data.my_work[i].price + "</td>" +
+                        "<td>" + data.my_work[i].role + "</td>" +
                         "</tr>";
                     $("#my_projects").append(html_inner);
                 }
@@ -41,6 +42,6 @@ function get_projects() {
             }
         }
     });
-}
+};
 
-setInterval(get_projects(), 200);
+setInterval(get_projects, 300);

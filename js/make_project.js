@@ -23,6 +23,7 @@ function make_project(id){
                 alert('Вы должны пройти авторизацию, чтобы выполнить заказ');
             } else {
                 alert('Проект успешно выполнен!');
+                $("#row" + id).empty();
                 $("#money").empty();
                 $("#money").append(data);
             }

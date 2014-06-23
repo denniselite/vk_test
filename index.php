@@ -24,6 +24,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
         setcookie('money', $user['money'], time() + 900);
     }
 }
+$_SESSION['money'] = round($_SESSION['money'], 2);
 ?>
 
 <!DOCTYPE html>
@@ -45,11 +46,11 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
     </div>
 <?php } else { ?>
     <div class="account">
-        <p>Ваше имя : <?php echo $_SESSION['name']; ?></p>
+        <span class="h">Личный кабинет</span><br/>
+        <span>Ваше имя : <?php echo $_SESSION['name']; ?></span><br/>
+        <span>Ваша роль : <span id="role"><?php echo $_SESSION['role']; ?></span></span><br/>
 
-        <p>Ваша роль : <span id="role"><?php echo $_SESSION['role']; ?></span></p>
-
-        <p>Ваш баланс = <span id="money"><?php echo $_SESSION['money']; ?></span></p><br/>
+        <span>Ваш баланс = <span id="money"><?php echo $_SESSION['money']; ?></span></span><br/>
 
         <input id="logout_button" type="button" value="Выйти">
     </div>
@@ -57,12 +58,13 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 <div class="content">
     <?php if (isset($_SESSION['id'])&&($_SESSION['role_id'] == "1")) { ?>
     <div class="new_project">
-        Создать новый проект:
-        <form>
+        Создать новый проект:<br/>
+        <form class="new_project">
             <input id="desc" name="desc" type="text" placeholder="Описание проекта">
             <input id="price" name="price" type="text" placeholder="Цена">
             <input id="create_project" type="button" onclick="create_project(this.form)" value="Создать">
         </form>
+        <div id="project_status" class="project_status"></div>
     </div>
     <?php }?>
     <br/>
@@ -89,7 +91,8 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                 <tr>
                     <td>ID</td>
                     <td>Описание</td>
-                    <td>Стартовая цена</td>
+                    <td>Цена</td>
+                    <td>Роль</td>
                 </tr>
                 <tbody id="my_projects">
 

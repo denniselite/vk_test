@@ -15,7 +15,10 @@ $("#create_project").click(function () {
         data: post_data,
         success: function (data) {
             if (data == "OK") {
-                alert('Проект успешно добавлен!');
+                $("#project_status").hide();
+                $("#project_status").append("Проект успешно добавлен");
+                $("#project_status").animate({opacity: "show"}, 1500);
+                $("#project_status").animate({opacity: "hide"}, 1500);
             }
             else if (data == "FALSE_AUTH"){
                 alert('Вы должны войти в систему');

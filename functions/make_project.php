@@ -5,7 +5,7 @@
  * Date: 23.06.14
  * Time: 19:22
  */
-ini_set('display_errors', '1');
+//ini_set('display_errors', '1');
 session_start();
 require_once "./db_connect.php";
 
@@ -13,9 +13,9 @@ make_project($_POST['id'], $_SESSION['id'], $_SESSION['role_id']);
 
 function make_project($project_id, $user_id, $role_id)
 {
-    if (empty($user_id)) {
+    if (empty($user_id)||($user_id == "")) {
         echo "FALSE_AUTH";
-    }
+    } else
     if ($role_id == "1") {
         echo "FALSE_WORKER";
     } else {
@@ -54,6 +54,7 @@ function make_project($project_id, $user_id, $role_id)
         $STH->execute($data);
 
         $_SESSION['money'] += $project['price'];
+        $_SESSION['money'] = round($_SESSION['money'], 2);
         setcookie('money', $_SESSION['money'], time() + 900);
         echo $_SESSION['money'];
     }
