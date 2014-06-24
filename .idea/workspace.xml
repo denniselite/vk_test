@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0a4e7843-5f4f-43f8-a3ee-33ecc16a7483" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/admin_get_projects.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/functions/admin_get_projects.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/style_construct.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/get_projects.js" afterPath="$PROJECT_DIR$/js/get_projects.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/make_project.js" afterPath="$PROJECT_DIR$/js/make_project.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/admin_get_projects.js" afterPath="$PROJECT_DIR$/js/admin_get_projects.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="vk_test.iws" />
@@ -69,10 +63,10 @@
       <file leaf-file-name="admin_get_projects.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/admin_get_projects.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="57" selection-start="641" selection-end="641" vertical-scroll-proportion="0.4556962" vertical-offset="108" max-vertical-offset="990">
+            <state line="49" column="32" selection-start="2168" selection-end="2168" vertical-scroll-proportion="0.8291139" vertical-offset="358" max-vertical-offset="990">
               <folding>
-                <marker date="1403585477266" expanded="true" signature="624:649" placeholder="..." />
-                <marker date="1403585477266" expanded="true" signature="1348:1374" placeholder="..." />
+                <marker date="1403585659074" expanded="true" signature="624:649" placeholder="..." />
+                <marker date="1403585659074" expanded="true" signature="1348:1374" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -373,7 +367,11 @@
       <created>1403579462266</created>
       <updated>1403579462266</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Добавлен интерфейс администратора">
+      <created>1403585641382</created>
+      <updated>1403585641382</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -421,7 +419,8 @@
     <MESSAGE value="Отображение заданий, баги при выполнении заданий, баги при обновлении роли" />
     <MESSAGE value="Поправил отображение проектов на главной" />
     <MESSAGE value="Добавлен интерфейс, не весь" />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавлен интерфейс, не весь" />
+    <MESSAGE value="Добавлен интерфейс администратора" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавлен интерфейс администратора" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -659,10 +658,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/admin_get_projects.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="57" selection-start="641" selection-end="641" vertical-scroll-proportion="0.4556962" vertical-offset="108" max-vertical-offset="990">
+        <state line="49" column="32" selection-start="2168" selection-end="2168" vertical-scroll-proportion="0.8291139" vertical-offset="358" max-vertical-offset="990">
           <folding>
-            <marker date="1403585477266" expanded="true" signature="624:649" placeholder="..." />
-            <marker date="1403585477266" expanded="true" signature="1348:1374" placeholder="..." />
+            <marker date="1403585659074" expanded="true" signature="624:649" placeholder="..." />
+            <marker date="1403585659074" expanded="true" signature="1348:1374" placeholder="..." />
           </folding>
         </state>
       </provider>

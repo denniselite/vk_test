@@ -47,4 +47,4 @@ function admin_get_projects() {
     });
 };
 
-setInterval(admin_get_projects, 4300);
+setInterval(admin_get_projects, 300);
