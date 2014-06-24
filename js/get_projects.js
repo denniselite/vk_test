@@ -15,13 +15,24 @@ function get_projects() {
         success: function (data) {
             if (count_all !== data.all.length) {
                 for (var i = count_all; i < data.all.length; i++) {
-                    var html_inner = "" +
-                        "<tr id='row"+ data.all[i].id +"'>" +
-                        "<td>" + data.all[i].id + "</td>" +
-                        "<td>" + data.all[i].desc + "</td>" +
-                        "<td>" + data.all[i].price + "</td>" +
-                        "<td><input type='button' value='Выполнить' onclick='make_project(" + data.all[i].id + ")'></td>" +
-                        "</tr>";
+                    var html_inner;
+                    if (i % 2 == 0) {
+                        html_inner = "" +
+                            "<tr style='background-color:#f1c40f;' id='row"+ data.all[i].id +"'>" +
+                            "<td>" + data.all[i].id + "</td>" +
+                            "<td>" + data.all[i].desc + "</td>" +
+                            "<td>" + data.all[i].price + "</td>" +
+                            "<td><input type='button' value='Выполнить' onclick='make_project(" + data.all[i].id + ")'></td>" +
+                            "</tr>";
+                    } else {
+                        html_inner = "" +
+                            "<tr id='row"+ data.all[i].id +"'>" +
+                            "<td>" + data.all[i].id + "</td>" +
+                            "<td>" + data.all[i].desc + "</td>" +
+                            "<td>" + data.all[i].price + "</td>" +
+                            "<td><input type='button' value='Выполнить' onclick='make_project(" + data.all[i].id + ")'></td>" +
+                            "</tr>";
+                    }
                     $("#projects_table").append(html_inner);
                 }
                 count_all = data.all.length;
@@ -29,13 +40,24 @@ function get_projects() {
 
             if (count_my !== data.my_work.length) {
                 for (var i = count_my; i < data.my_work.length; i++) {
-                    var html_inner = "" +
-                        "<tr>" +
-                        "<td>" + data.my_work[i].id + "</td>" +
-                        "<td>" + data.my_work[i].desc + "</td>" +
-                        "<td>" + data.my_work[i].price + "</td>" +
-                        "<td>" + data.my_work[i].role + "</td>" +
-                        "</tr>";
+                    var html_inner;
+                    if (i % 2 == 0){
+                        html_inner = "" +
+                            "<tr style='background-color:#2ecc71;'>" +
+                            "<td>" + data.my_work[i].id + "</td>" +
+                            "<td>" + data.my_work[i].desc + "</td>" +
+                            "<td>" + data.my_work[i].price + "</td>" +
+                            "<td>" + data.my_work[i].role + "</td>" +
+                            "</tr>";
+                    } else {
+                        html_inner = "" +
+                            "<tr>" +
+                            "<td>" + data.my_work[i].id + "</td>" +
+                            "<td>" + data.my_work[i].desc + "</td>" +
+                            "<td>" + data.my_work[i].price + "</td>" +
+                            "<td>" + data.my_work[i].role + "</td>" +
+                            "</tr>";
+                    }
                     $("#my_projects").append(html_inner);
                 }
                 count_my = data.my_work.length;

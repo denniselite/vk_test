@@ -35,75 +35,85 @@ $_SESSION['money'] = round($_SESSION['money'], 2);
     <meta charset="utf-8">
 </head>
 <body>
-<?php if (!isset($_SESSION['id'])) { ?>
-    <div class="login">
-        Форма входа:
-        <form method="POST" action="">
-            <input type="text" name="login" placeholder="login"><br/>
-            <input type="password" name="pass" placeholder="pass"><br/>
-            <input type="submit" value="Войти">
-        </form>
-    </div>
-<?php } else { ?>
-    <div class="account">
-        <span class="h">Личный кабинет</span><br/>
-        <span>Ваше имя : <?php echo $_SESSION['name']; ?></span><br/>
-        <span>Ваша роль : <span class="role" id="role"><?php echo $_SESSION['role']; ?></span></span><br/>
-
-        <span><?php if ($_SESSION['role_id'] == 3) {echo "Баланс системы";} else {echo "Ваш баланс";}?> = <span id="money"><?php echo $_SESSION['money']; ?></span></span><br/>
-
-        <input id="logout_button" type="button" value="Выйти">
-    </div>
-<?php } ?>
-<div class="content">
-    <div class="new_project" id="new_project"
-         style="<?php if (isset($_SESSION['id']) && ($_SESSION['role_id'] == "1")) {
-             echo "display:block;";
-         } else {
-             echo "display:none;";
-         }?>">
-        Создать новый проект:<br/>
-
-        <form class="new_project">
-            <input id="desc" name="desc" type="text" placeholder="Описание проекта">
-            <input id="price" name="price" type="text" placeholder="Цена">
-            <input id="create_project" type="button" onclick="create_project(this.form)" value="Создать">
-        </form>
-        <div id="project_status" class="project_status"></div>
-    </div>
-    <br/>
-
-    <div class="projects">
-        <div class="all_projects">
-            Список проектов:
-            <table>
-                <tr>
-                    <td>ID</td>
-                    <td>Описание</td>
-                    <td>Цена</td>
-                    <td></td>
-                </tr>
-                <tbody id="projects_table">
-
-                </tbody>
-            </table>
+<header>
+    <?php if (!isset($_SESSION['id'])) { ?>
+        <table class="login">
+            <tr>
+                <td>Форма входа:</td>
+                <form method="POST" action="">
+                    <td><input type="text" name="login" placeholder="login"></td>
+                    <td><input type="password" name="pass" placeholder="pass"></td>
+                    <td><input class="login_button" type="submit" value="Войти"></td>
+                </form>
+            </tr>
+        </table>
         </div>
-        <?php if (isset($_SESSION['id'])) { ?>
-            <div class="my_projects">
-                Мои завершенные проекты:
-                <table class="my_table">
+    <?php } else { ?>
+        <table class="account">
+            <tr>
+                <td>Привет, <?php echo $_SESSION['name']; ?>!</td>
+                <td>Ваша роль : <span class="role" id="role"><?php echo $_SESSION['role']; ?></span></td>
+
+                <td><?php if ($_SESSION['role_id'] == 3) {echo "Баланс системы";} else {echo "Ваш баланс";}?> = <span id="money"><?php echo $_SESSION['money']; ?></span></td>
+
+                <td><input id="logout_button" type="button" class="logout_button" value="Выйти"></td>
+            </tr>
+        </table>
+    <?php } ?>
+</header>
+<div class="content_wrapper">
+    <div class="content">
+        <div class="new_project" id="new_project"
+             style="<?php if (isset($_SESSION['id']) && ($_SESSION['role_id'] == "1")) {
+                 echo "display:block;";
+             } else {
+                 echo "display:none;";
+             }?>">
+            <div class="h">Создать новый проект:</div>
+            <div class="new_projects_fields">
+                <input class="desc" id="desc" name="desc" type="text" placeholder="Описание проекта">
+            </div>
+            <div class="new_projects_fields">
+                <input class="price" id="price" name="price" type="text" placeholder="Цена">
+            </div>
+            <div class="new_projects_fields">
+                <input  class="create_project_button" id="create_project" style="margin-top: -5px;" type="button" value="Создать">
+            </div>
+            <div id="project_status" class="project_status"></div>
+        </div>
+
+        <div class="projects">
+            <div class="all_projects">
+                <div class="name">Список проектов:</div>
+                <table>
                     <tr>
                         <td>ID</td>
                         <td>Описание</td>
                         <td>Цена</td>
-                        <td>Роль</td>
+                        <td></td>
                     </tr>
-                    <tbody id="my_projects">
+                    <tbody id="projects_table">
 
                     </tbody>
                 </table>
             </div>
-        <?php } ?>
+            <?php if (isset($_SESSION['id'])) { ?>
+                <div class="my_projects">
+                    <div class="name">Мои завершенные проекты</div>
+                    <table class="my_table">
+                        <tr>
+                            <td>ID</td>
+                            <td>Описание</td>
+                            <td>Цена</td>
+                            <td>Роль</td>
+                        </tr>
+                        <tbody id="my_projects">
+
+                        </tbody>
+                    </table>
+                </div>
+            <?php } ?>
+        </div>
     </div>
 </div>
 </body>
@@ -115,4 +125,15 @@ $_SESSION['money'] = round($_SESSION['money'], 2);
 <script src="./js/new_project.js"></script>
 <script src="./js/make_project.js"></script>
 <script src="./js/change_role.js"></script>
+<script>
+    $("body").css({
+        'height' : $(window).height()
+    });
+    $(".content_wrapper").css({
+        'height' : $(window).height() - 100
+    });
+    $(".projects").css({
+        'height' : $(window).height() - 100
+    });
+</script>
 </html>
