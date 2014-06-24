@@ -20,8 +20,8 @@ function get_projects()
         $projects = $STH->fetchAll();
         for ($i = 0; $i < count($projects); $i++){
             $projects[$i]['author_name'] = get_name($projects[$i]['author_id']);
-            if ($projects[$i]['worker_id'] === 0){
-                $projects[$i]['worker_name'] = "Никто не приступал";
+            if (empty($projects[$i]['worker_id'])){
+                $projects[$i]['worker_name'] = "Не сделан";
             } else {
                 $projects[$i]['worker_name'] = get_name($projects[$i]['worker_id']);
             }
