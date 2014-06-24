@@ -8,6 +8,9 @@ var count_all = 0;
 var count_my = 0;
 
 function get_projects() {
+    if ($("#projects_table").html() == ""){
+        count_all = 0;
+    }
     $.ajax({
         crossDomain: true,
         url: request,
@@ -20,18 +23,18 @@ function get_projects() {
                     if (i % 2 == 0) {
                         html_inner = "" +
                             "<tr style='background-color:#f1c40f;' id='row"+ data.all[i].id +"'>" +
-                            "<td>" + data.all[i].id + "</td>" +
+                            "<td align='center'>" + data.all[i].id + "</td>" +
                             "<td>" + data.all[i].desc + "</td>" +
-                            "<td>" + data.all[i].price + "</td>" +
-                            "<td><input type='button' value='Выполнить' onclick='make_project(" + data.all[i].id + ")'></td>" +
+                            "<td align='center'>" + data.all[i].price + "</td>" +
+                            "<td align='center'><input class='make_project_button' type='button' value='Выполнить' onclick='make_project(" + data.all[i].id + ")'></td>" +
                             "</tr>";
                     } else {
                         html_inner = "" +
                             "<tr id='row"+ data.all[i].id +"'>" +
-                            "<td>" + data.all[i].id + "</td>" +
+                            "<td align='center'>" + data.all[i].id + "</td>" +
                             "<td>" + data.all[i].desc + "</td>" +
-                            "<td>" + data.all[i].price + "</td>" +
-                            "<td><input type='button' value='Выполнить' onclick='make_project(" + data.all[i].id + ")'></td>" +
+                            "<td align='center'>" + data.all[i].price + "</td>" +
+                            "<td align='center'><input class='make_project_button' type='button' value='Выполнить' onclick='make_project(" + data.all[i].id + ")'></td>" +
                             "</tr>";
                     }
                     $("#projects_table").append(html_inner);
@@ -45,18 +48,18 @@ function get_projects() {
                     if (i % 2 == 0){
                         html_inner = "" +
                             "<tr style='background-color:#2ecc71;'>" +
-                            "<td>" + data.my_work[i].id + "</td>" +
+                            "<td align='center'>" + data.my_work[i].id + "</td>" +
                             "<td>" + data.my_work[i].desc + "</td>" +
-                            "<td>" + data.my_work[i].price + "</td>" +
-                            "<td>" + data.my_work[i].role + "</td>" +
+                            "<td align='center'>" + data.my_work[i].price + "</td>" +
+                            "<td align='center'>" + data.my_work[i].role + "</td>" +
                             "</tr>";
                     } else {
                         html_inner = "" +
                             "<tr>" +
-                            "<td>" + data.my_work[i].id + "</td>" +
+                            "<td align='center'>" + data.my_work[i].id + "</td>" +
                             "<td>" + data.my_work[i].desc + "</td>" +
-                            "<td>" + data.my_work[i].price + "</td>" +
-                            "<td>" + data.my_work[i].role + "</td>" +
+                            "<td align='center'>" + data.my_work[i].price + "</td>" +
+                            "<td align='center'>" + data.my_work[i].role + "</td>" +
                             "</tr>";
                     }
                     $("#my_projects").append(html_inner);

@@ -83,31 +83,67 @@ $_SESSION['money'] = round($_SESSION['money'], 2);
         </div>
 
         <div class="projects">
-            <div class="all_projects">
+            <?php if (($_SESSION['role_id']) !== "3") { ?>
+            <div class="all_projects"<?php if (!isset($_SESSION['id'])) {
+                echo "style='width:100%;border:none;'";
+            } ?>>
                 <div class="name">Список проектов:</div>
                 <table>
+                    <col width="10%">
+                    <col width="55%">
+                    <col width="10%">
+                    <col width="25%">
                     <tr>
-                        <td>ID</td>
+                        <td align='center'>ID</td>
                         <td>Описание</td>
-                        <td>Цена</td>
-                        <td></td>
+                        <td align="center">Цена</td>
+                        <td>&nbsp;</td>
                     </tr>
                     <tbody id="projects_table">
 
                     </tbody>
                 </table>
             </div>
-            <?php if (isset($_SESSION['id'])) { ?>
+            <?php } ?>
+            <?php if ((isset($_SESSION['id'])&&($_SESSION['role_id']) !== "3")) { ?>
                 <div class="my_projects">
                     <div class="name">Мои завершенные проекты</div>
                     <table class="my_table">
+                        <col width="10%">
+                        <col width="55%">
+                        <col width="10%">
+                        <col width="25%">
                         <tr>
-                            <td>ID</td>
+                            <td align="center">ID</td>
                             <td>Описание</td>
-                            <td>Цена</td>
-                            <td>Роль</td>
+                            <td align="center">Цена</td>
+                            <td align="center">Роль</td>
                         </tr>
                         <tbody id="my_projects">
+
+                        </tbody>
+                    </table>
+                </div>
+            <?php }  ?>
+            <?php if (($_SESSION['role_id']) === "3") { ?>
+                <div class="all_projects" style="width:100%;border:none;">
+                    <div class="name">Список проектов:</div>
+                    <table>
+                        <col width="10%">
+                        <col width="46%">
+                        <col width="10%">
+                        <col width="12%">
+                        <col width="12%">
+                        <col width="10">
+                        <tr style="background-color: #95a5a6;">
+                            <td align='center'>ID</td>
+                            <td>Описание</td>
+                            <td align="center">Цена</td>
+                            <td>Автор</td>
+                            <td>Исполнитель</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tbody id="projects_table">
 
                         </tbody>
                     </table>
@@ -120,20 +156,15 @@ $_SESSION['money'] = round($_SESSION['money'], 2);
 <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <script src="https://jquery-json.googlecode.com/files/jquery.json-2.4.js"></script>
+<?php if (($_SESSION['role_id']) !== "3") { ?>
 <script src="./js/get_projects.js"></script>
+<?php }?>
+<?php if (($_SESSION['role_id']) === "3") { ?>
+    <script src="./js/admin_get_projects.js"></script>
+<?php }?>
 <script src="./js/logout.js"></script>
 <script src="./js/new_project.js"></script>
 <script src="./js/make_project.js"></script>
 <script src="./js/change_role.js"></script>
-<script>
-    $("body").css({
-        'height' : $(window).height()
-    });
-    $(".content_wrapper").css({
-        'height' : $(window).height() - 100
-    });
-    $(".projects").css({
-        'height' : $(window).height() - 100
-    });
-</script>
+<script src="./js/style_construct.js"></script>
 </html>

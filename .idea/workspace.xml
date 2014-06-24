@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0a4e7843-5f4f-43f8-a3ee-33ecc16a7483" name="Default" comment="Добавлен интерфейс, не весь">
+    <list default="true" id="0a4e7843-5f4f-43f8-a3ee-33ecc16a7483" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/admin_get_projects.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/functions/admin_get_projects.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/style_construct.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/get_projects.js" afterPath="$PROJECT_DIR$/js/get_projects.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/make_project.js" afterPath="$PROJECT_DIR$/js/make_project.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -28,6 +32,17 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
+      <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="137" column="61" selection-start="5530" selection-end="5563" vertical-scroll-proportion="-13.5" vertical-offset="2043" max-vertical-offset="3078">
+              <folding>
+                <element signature="n#style#0;n#tr#0;n#table#0;n#div#2;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="jquery.min.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/jquery.min.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -37,49 +52,49 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="get_projects.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/get_projects.js">
+      <file leaf-file-name="admin_get_projects.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/functions/admin_get_projects.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="0" selection-start="41" selection-end="41" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1350">
+            <state line="21" column="38" selection-start="494" selection-end="494" vertical-scroll-proportion="-6.923077" vertical-offset="198" max-vertical-offset="882">
               <folding>
-                <marker date="1403579447886" expanded="false" signature="582:607" placeholder="..." />
-                <marker date="1403579447886" expanded="false" signature="1942:1967" placeholder="..." />
+                <element signature="e#6#84#0" expanded="true" />
+                <marker date="1403585119847" expanded="true" signature="12:113" placeholder="SELECT proje..projects..." />
+                <marker date="1403585119847" expanded="true" signature="270:292" placeholder="SELECT * FRO..projects..." />
+                <marker date="1403585119847" expanded="true" signature="990:1033" placeholder="SELECT users..users..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="new_project.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/functions/new_project.php">
+      <file leaf-file-name="admin_get_projects.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/js/admin_get_projects.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="22" selection-start="888" selection-end="888" vertical-scroll-proportion="-11.538462" vertical-offset="258" max-vertical-offset="864">
+            <state line="22" column="57" selection-start="641" selection-end="641" vertical-scroll-proportion="0.4556962" vertical-offset="108" max-vertical-offset="990">
               <folding>
-                <marker date="1403539262417" expanded="true" signature="755:862" placeholder="INSERT INTO ..." />
+                <marker date="1403585477266" expanded="true" signature="624:649" placeholder="..." />
+                <marker date="1403585477266" expanded="true" signature="1348:1374" placeholder="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="db_connect.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/functions/db_connect.php">
+      <file leaf-file-name="style_construct.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/style_construct.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="1" selection-start="400" selection-end="400" vertical-scroll-proportion="-11.769231" vertical-offset="0" max-vertical-offset="414">
+            <state line="9" column="20" selection-start="187" selection-end="187" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="306">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="make_project.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/functions/make_project.php">
+      <file leaf-file-name="get_projects.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/functions/get_projects.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="14" selection-start="393" selection-end="393" vertical-scroll-proportion="9.923077" vertical-offset="582" max-vertical-offset="1188">
+            <state line="51" column="1" selection-start="87" selection-end="1667" vertical-scroll-proportion="-22.423077" vertical-offset="335" max-vertical-offset="1062">
               <folding>
                 <element signature="e#6#85#0" expanded="true" />
-                <marker date="1403563743946" expanded="true" signature="571:621" placeholder="SELECT price..projects..." />
-                <marker date="1403563743946" expanded="true" signature="850:916" placeholder="UPDATE proje..." />
-                <marker date="1403563743946" expanded="true" signature="1099:1158" placeholder="UPDATE users..." />
-                <marker date="1403563743946" expanded="true" signature="1522:1579" placeholder="UPDATE users..." />
-                <marker date="1403563743946" expanded="true" signature="1628:1685" placeholder="UPDATE users..." />
+                <marker date="1403568971299" expanded="true" signature="345:408" placeholder="SELECT * FRO..projects..." />
+                <marker date="1403568971299" expanded="true" signature="666:873" placeholder="SELECT proje..projects..." />
               </folding>
             </state>
           </provider>
@@ -88,7 +103,7 @@
       <file leaf-file-name="new_project.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/new_project.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="45" selection-start="476" selection-end="476" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="666">
+            <state line="18" column="44" selection-start="521" selection-end="521" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="666">
               <folding />
             </state>
           </provider>
@@ -120,19 +135,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/css/style.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="149" column="0" selection-start="2856" selection-end="2856" vertical-scroll-proportion="0.66511625" vertical-offset="2253" max-vertical-offset="2916">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="make_project.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/make_project.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="46" selection-start="845" selection-end="845" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="738">
+            <state line="31" column="49" selection-start="1043" selection-end="1043" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="774">
               <folding>
                 <element signature="n#!!doc;n#make_project#0" expanded="false" />
               </folding>
@@ -172,15 +178,18 @@
         <option value="$PROJECT_DIR$/functions/login.php" />
         <option value="$PROJECT_DIR$/functions/new_project.php" />
         <option value="$PROJECT_DIR$/js/new_project.js" />
-        <option value="$PROJECT_DIR$/js/make_project.js" />
         <option value="$PROJECT_DIR$/js/change_role.js" />
         <option value="$PROJECT_DIR$/functions/logout.php" />
         <option value="$PROJECT_DIR$/functions/change_role.php" />
         <option value="$PROJECT_DIR$/functions/get_projects.php" />
-        <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/js/logout.js" />
-        <option value="$PROJECT_DIR$/js/get_projects.js" />
+        <option value="$PROJECT_DIR$/js/style_construct.js" />
         <option value="$PROJECT_DIR$/css/style.css" />
+        <option value="$PROJECT_DIR$/js/make_project.js" />
+        <option value="$PROJECT_DIR$/js/get_projects.js" />
+        <option value="$PROJECT_DIR$/functions/admin_get_projects.php" />
+        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/js/admin_get_projects.js" />
       </list>
     </option>
   </component>
@@ -360,7 +369,11 @@
       <created>1403579270205</created>
       <updated>1403579270205</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Добавлен интерфейс, не весь">
+      <created>1403579462266</created>
+      <updated>1403579462266</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -407,7 +420,8 @@
     <MESSAGE value="Плавное выполнение заданий" />
     <MESSAGE value="Отображение заданий, баги при выполнении заданий, баги при обновлении роли" />
     <MESSAGE value="Поправил отображение проектов на главной" />
-    <option name="LAST_COMMIT_MESSAGE" value="Поправил отображение проектов на главной" />
+    <MESSAGE value="Добавлен интерфейс, не весь" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавлен интерфейс, не весь" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -416,7 +430,9 @@
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1" column="16" selection-start="22" selection-end="22" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1278">
-          <folding />
+          <folding>
+            <element signature="n#style#0;n#tr#0;n#table#0;n#div#2;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -431,8 +447,8 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="24" column="9" selection-start="41" selection-end="770" vertical-scroll-proportion="0.0" vertical-offset="9" max-vertical-offset="540">
           <folding>
-            <marker date="1403579447886" expanded="false" signature="582:607" placeholder="..." />
-            <marker date="1403579447886" expanded="false" signature="1942:1967" placeholder="..." />
+            <marker date="1403582418774" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1403582418774" expanded="true" signature="-1:-1" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -449,8 +465,8 @@
         <state line="18" column="48" selection-start="423" selection-end="423" vertical-scroll-proportion="0.0" vertical-offset="71" max-vertical-offset="576">
           <folding>
             <element signature="e#6#85#0" expanded="true" />
-            <marker date="1403568971299" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..projects..." />
-            <marker date="1403568971299" expanded="true" signature="-1:-1" placeholder="SELECT proje..projects..." />
+            <marker date="1403568971299" expanded="true" signature="345:408" placeholder="SELECT * FRO..projects..." />
+            <marker date="1403568971299" expanded="true" signature="666:873" placeholder="SELECT proje..projects..." />
           </folding>
         </state>
       </provider>
@@ -479,20 +495,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/jquery.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="0" selection-start="93154" selection-end="93154" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="234">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/functions/db_connect.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="1" selection-start="400" selection-end="400" vertical-scroll-proportion="-11.769231" vertical-offset="0" max-vertical-offset="414">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/functions/logout.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="14" column="25" selection-start="274" selection-end="274" vertical-scroll-proportion="0.26171243" vertical-offset="0" max-vertical-offset="619">
@@ -506,29 +508,6 @@
           <folding>
             <marker date="1403536583776" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..users..." />
             <marker date="1403536583776" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..roles..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/functions/make_project.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="14" selection-start="393" selection-end="393" vertical-scroll-proportion="9.923077" vertical-offset="582" max-vertical-offset="1188">
-          <folding>
-            <element signature="e#6#85#0" expanded="true" />
-            <marker date="1403563743946" expanded="true" signature="571:621" placeholder="SELECT price..projects..." />
-            <marker date="1403563743946" expanded="true" signature="850:916" placeholder="UPDATE proje..." />
-            <marker date="1403563743946" expanded="true" signature="1099:1158" placeholder="UPDATE users..." />
-            <marker date="1403563743946" expanded="true" signature="1522:1579" placeholder="UPDATE users..." />
-            <marker date="1403563743946" expanded="true" signature="1628:1685" placeholder="UPDATE users..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/functions/new_project.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="22" selection-start="888" selection-end="888" vertical-scroll-proportion="-11.538462" vertical-offset="258" max-vertical-offset="864">
-          <folding>
-            <marker date="1403539262417" expanded="true" signature="755:862" placeholder="INSERT INTO ..." />
           </folding>
         </state>
       </provider>
@@ -555,33 +534,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/make_project.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="46" selection-start="845" selection-end="845" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="738">
-          <folding>
-            <element signature="n#!!doc;n#make_project#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/functions/get_projects.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="24" selection-start="162" selection-end="162" vertical-scroll-proportion="0.30210015" vertical-offset="11" max-vertical-offset="1062">
-          <folding>
-            <element signature="e#6#85#0" expanded="true" />
-            <marker date="1403568971299" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..projects..." />
-            <marker date="1403568971299" expanded="true" signature="-1:-1" placeholder="SELECT proje..projects..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/new_project.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="45" selection-start="476" selection-end="476" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="666">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/logout.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="23" column="2" selection-start="619" selection-end="619" vertical-scroll-proportion="0.6418605" vertical-offset="0" max-vertical-offset="645">
@@ -589,27 +541,129 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
+    <entry file="file://$PROJECT_DIR$/js/new_project.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="114" column="21" selection-start="4399" selection-end="4399" vertical-scroll-proportion="0.330033" vertical-offset="1780" max-vertical-offset="2520">
+        <state line="18" column="44" selection-start="521" selection-end="521" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="666">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/get_projects.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="0" selection-start="41" selection-end="41" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1350">
-          <folding>
-            <marker date="1403579447886" expanded="false" signature="582:607" placeholder="..." />
-            <marker date="1403579447886" expanded="false" signature="1942:1967" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="149" column="0" selection-start="2856" selection-end="2856" vertical-scroll-proportion="0.66511625" vertical-offset="2253" max-vertical-offset="2916">
+        <state line="80" column="26" selection-start="1617" selection-end="1617" vertical-scroll-proportion="0.5813953" vertical-offset="1065" max-vertical-offset="2988">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/make_project.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="49" selection-start="1043" selection-end="1043" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="774">
+          <folding>
+            <element signature="n#!!doc;n#make_project#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/functions/make_project.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="14" selection-start="393" selection-end="393" vertical-scroll-proportion="-0.42574257" vertical-offset="582" max-vertical-offset="1188">
+          <folding>
+            <element signature="e#6#85#0" expanded="true" />
+            <marker date="1403563743946" expanded="true" signature="-1:-1" placeholder="SELECT price..projects..." />
+            <marker date="1403563743946" expanded="true" signature="-1:-1" placeholder="UPDATE proje..." />
+            <marker date="1403563743946" expanded="true" signature="-1:-1" placeholder="UPDATE users..." />
+            <marker date="1403563743946" expanded="true" signature="-1:-1" placeholder="UPDATE users..." />
+            <marker date="1403563743946" expanded="true" signature="-1:-1" placeholder="UPDATE users..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/functions/db_connect.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="1" selection-start="400" selection-end="400" vertical-scroll-proportion="0.49434572" vertical-offset="0" max-vertical-offset="619">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/functions/new_project.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="22" selection-start="888" selection-end="888" vertical-scroll-proportion="0.4950495" vertical-offset="258" max-vertical-offset="864">
+          <folding>
+            <marker date="1403539262417" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/style_construct.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="20" selection-start="187" selection-end="187" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="306">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/functions/get_projects.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="51" column="1" selection-start="87" selection-end="1667" vertical-scroll-proportion="-22.423077" vertical-offset="335" max-vertical-offset="1062">
+          <folding>
+            <element signature="e#6#85#0" expanded="true" />
+            <marker date="1403568971299" expanded="true" signature="345:408" placeholder="SELECT * FRO..projects..." />
+            <marker date="1403568971299" expanded="true" signature="666:873" placeholder="SELECT proje..projects..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/get_projects.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="72" column="31" selection-start="42" selection-end="3235" vertical-scroll-proportion="0.0" vertical-offset="324" max-vertical-offset="1404">
+          <folding>
+            <marker date="1403582418774" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1403582418774" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/functions/admin_get_projects.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="38" selection-start="494" selection-end="494" vertical-scroll-proportion="-6.923077" vertical-offset="198" max-vertical-offset="882">
+          <folding>
+            <element signature="e#6#84#0" expanded="true" />
+            <marker date="1403585119847" expanded="true" signature="12:113" placeholder="SELECT proje..projects..." />
+            <marker date="1403585119847" expanded="true" signature="270:292" placeholder="SELECT * FRO..projects..." />
+            <marker date="1403585119847" expanded="true" signature="990:1033" placeholder="SELECT users..users..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/phpstorm.jar!/resources/html5-schema/common.rnc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="200" column="23" selection-start="4795" selection-end="4815" vertical-scroll-proportion="0.3322785" vertical-offset="3390" max-vertical-offset="8712">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/jquery.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="0" selection-start="93154" selection-end="93154" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="234">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="137" column="61" selection-start="5530" selection-end="5563" vertical-scroll-proportion="-13.5" vertical-offset="2043" max-vertical-offset="3078">
+          <folding>
+            <element signature="n#style#0;n#tr#0;n#table#0;n#div#2;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/admin_get_projects.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="57" selection-start="641" selection-end="641" vertical-scroll-proportion="0.4556962" vertical-offset="108" max-vertical-offset="990">
+          <folding>
+            <marker date="1403585477266" expanded="true" signature="624:649" placeholder="..." />
+            <marker date="1403585477266" expanded="true" signature="1348:1374" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
