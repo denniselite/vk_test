@@ -48,17 +48,22 @@ $_SESSION['money'] = round($_SESSION['money'], 2);
     <div class="account">
         <span class="h">Личный кабинет</span><br/>
         <span>Ваше имя : <?php echo $_SESSION['name']; ?></span><br/>
-        <span>Ваша роль : <span id="role"><?php echo $_SESSION['role']; ?></span></span><br/>
+        <span>Ваша роль : <span class="role" id="role"><?php echo $_SESSION['role']; ?></span></span><br/>
 
-        <span>Ваш баланс = <span id="money"><?php echo $_SESSION['money']; ?></span></span><br/>
+        <span><?php if ($_SESSION['role_id'] == 3) {echo "Баланс системы";} else {echo "Ваш баланс";}?> = <span id="money"><?php echo $_SESSION['money']; ?></span></span><br/>
 
         <input id="logout_button" type="button" value="Выйти">
     </div>
 <?php } ?>
 <div class="content">
-    <?php if (isset($_SESSION['id'])&&($_SESSION['role_id'] == "1")) { ?>
-    <div class="new_project">
+    <div class="new_project" id="new_project"
+         style="<?php if (isset($_SESSION['id']) && ($_SESSION['role_id'] == "1")) {
+             echo "display:block;";
+         } else {
+             echo "display:none;";
+         }?>">
         Создать новый проект:<br/>
+
         <form class="new_project">
             <input id="desc" name="desc" type="text" placeholder="Описание проекта">
             <input id="price" name="price" type="text" placeholder="Цена">
@@ -66,7 +71,6 @@ $_SESSION['money'] = round($_SESSION['money'], 2);
         </form>
         <div id="project_status" class="project_status"></div>
     </div>
-    <?php }?>
     <br/>
 
     <div class="projects">
@@ -85,21 +89,21 @@ $_SESSION['money'] = round($_SESSION['money'], 2);
             </table>
         </div>
         <?php if (isset($_SESSION['id'])) { ?>
-        <div class="my_projects">
-            Мои завершенные проекты:
-            <table class="my_table">
-                <tr>
-                    <td>ID</td>
-                    <td>Описание</td>
-                    <td>Цена</td>
-                    <td>Роль</td>
-                </tr>
-                <tbody id="my_projects">
+            <div class="my_projects">
+                Мои завершенные проекты:
+                <table class="my_table">
+                    <tr>
+                        <td>ID</td>
+                        <td>Описание</td>
+                        <td>Цена</td>
+                        <td>Роль</td>
+                    </tr>
+                    <tbody id="my_projects">
 
-                </tbody>
-            </table>
-        </div>
-        <?php }?>
+                    </tbody>
+                </table>
+            </div>
+        <?php } ?>
     </div>
 </div>
 </body>

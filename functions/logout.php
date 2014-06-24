@@ -12,6 +12,7 @@ function logout(){
     unset($_SESSION['name']);
     unset($_SESSION['money']);
     unset($_SESSION['role_id']);
+    unset($_SESSION['role']);
     session_destroy();
     header("Location : ./");
 }

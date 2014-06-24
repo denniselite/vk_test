@@ -10,10 +10,12 @@ $("#role").click(function (){
         crossDomain: true,
         url: request,
         type: 'POST',
-        dataType: 'text',
+        dataType: 'json',
         data: post_data,
         success: function (data) {
-            location.reload();
+            $("#role").empty();
+            $("#role").append(data.role);
+            $("#new_project").fadeToggle(1000);
         }
     });
 });

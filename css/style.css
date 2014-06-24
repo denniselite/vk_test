@@ -49,11 +49,16 @@ body{
 .projects table .project_ok{
     text-align: center;
     color: green;
+    display: none;
 }
 .projects .my_table{
     width: 380px;
     border: 1px solid;
 }
-#role{
+.role{
+    border-bottom: 1px dotted;
     cursor: pointer;
+}
+.role:hover{
+    color: blue;
 }
