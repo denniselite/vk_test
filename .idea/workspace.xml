@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0a4e7843-5f4f-43f8-a3ee-33ecc16a7483" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/change_role.js" afterPath="$PROJECT_DIR$/js/change_role.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/functions/change_role.php" afterPath="$PROJECT_DIR$/functions/change_role.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/functions/get_projects.php" afterPath="$PROJECT_DIR$/functions/get_projects.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/functions/logout.php" afterPath="$PROJECT_DIR$/functions/logout.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="vk_test.iws" />
@@ -79,11 +74,11 @@
       <file leaf-file-name="get_projects.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/functions/get_projects.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="6" selection-start="332" selection-end="332" vertical-scroll-proportion="0.33117932" vertical-offset="83" max-vertical-offset="1026">
+            <state line="13" column="33" selection-start="217" selection-end="217" vertical-scroll-proportion="0.3602585" vertical-offset="11" max-vertical-offset="1062">
               <folding>
                 <element signature="e#6#85#0" expanded="true" />
-                <marker date="1403568650431" expanded="true" signature="208:271" placeholder="SELECT * FRO..projects..." />
-                <marker date="1403568650431" expanded="true" signature="587:794" placeholder="SELECT proje..projects..." />
+                <marker date="1403568971299" expanded="true" signature="345:408" placeholder="SELECT * FRO..projects..." />
+                <marker date="1403568971299" expanded="true" signature="666:873" placeholder="SELECT proje..projects..." />
               </folding>
             </state>
           </provider>
@@ -352,7 +347,11 @@
       <created>1403565371570</created>
       <updated>1403565371570</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Отображение заданий, баги при выполнении заданий, баги при обновлении роли">
+      <created>1403568755987</created>
+      <updated>1403568755987</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -371,7 +370,7 @@
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295129" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25037822" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25037822" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -397,7 +396,8 @@
     <MESSAGE value="first commit" />
     <MESSAGE value="Fixed bugs" />
     <MESSAGE value="Плавное выполнение заданий" />
-    <option name="LAST_COMMIT_MESSAGE" value="Плавное выполнение заданий" />
+    <MESSAGE value="Отображение заданий, баги при выполнении заданий, баги при обновлении роли" />
+    <option name="LAST_COMMIT_MESSAGE" value="Отображение заданий, баги при выполнении заданий, баги при обновлении роли" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -442,8 +442,8 @@
         <state line="18" column="48" selection-start="423" selection-end="423" vertical-scroll-proportion="0.0" vertical-offset="71" max-vertical-offset="576">
           <folding>
             <element signature="e#6#85#0" expanded="true" />
-            <marker date="1403568650431" expanded="true" signature="208:271" placeholder="SELECT * FRO..projects..." />
-            <marker date="1403568650431" expanded="true" signature="587:794" placeholder="SELECT proje..projects..." />
+            <marker date="1403568971299" expanded="true" signature="345:408" placeholder="SELECT * FRO..projects..." />
+            <marker date="1403568971299" expanded="true" signature="666:873" placeholder="SELECT proje..projects..." />
           </folding>
         </state>
       </provider>
@@ -600,11 +600,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/functions/get_projects.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="6" selection-start="332" selection-end="332" vertical-scroll-proportion="0.33117932" vertical-offset="83" max-vertical-offset="1026">
+        <state line="13" column="33" selection-start="217" selection-end="217" vertical-scroll-proportion="0.3602585" vertical-offset="11" max-vertical-offset="1062">
           <folding>
             <element signature="e#6#85#0" expanded="true" />
-            <marker date="1403568650431" expanded="true" signature="208:271" placeholder="SELECT * FRO..projects..." />
-            <marker date="1403568650431" expanded="true" signature="587:794" placeholder="SELECT proje..projects..." />
+            <marker date="1403568971299" expanded="true" signature="345:408" placeholder="SELECT * FRO..projects..." />
+            <marker date="1403568971299" expanded="true" signature="666:873" placeholder="SELECT proje..projects..." />
           </folding>
         </state>
       </provider>

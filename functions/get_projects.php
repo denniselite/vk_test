@@ -10,11 +10,13 @@ session_start();
 require_once "./db_connect.php";
 
 function get_projects(){
-
+    $data = array();
+    if (!isset($_SESSION['id'])){
+        $data['id'] = 0;
+    } else {
+        $data['id'] = $_SESSION['id'];
+    }
     $STH = db_connect("projects")->prepare("SELECT * FROM projects WHERE worker_id = 0 AND author_id != :id");
-    $data = array(
-        'id' => $_SESSION['id']
-    );
     $STH->execute($data);
     $STH->setFetchMode(PDO::FETCH_ASSOC);
     $projects = $STH->fetchAll();
