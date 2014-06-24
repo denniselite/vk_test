@@ -1,6 +1,7 @@
 /**
  * Created by Денис on 23.06.14.
  */
+
 var request = "./functions/get_projects.php";
 var length;
 var count_all = 0;

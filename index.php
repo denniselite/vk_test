@@ -112,7 +112,7 @@ $_SESSION['money'] = round($_SESSION['money'], 2);
                         </tbody>
                     </table>
                 </div>
-            <?php } ?>
+            <?php }  ?>
         </div>
     </div>
 </div>

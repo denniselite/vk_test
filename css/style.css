@@ -147,6 +147,7 @@ input[type="text"]:hover, input[type="text"]:active{
 .projects .my_table tr{
     background-color: #27ae60;
 }
+
 .role{
     border-bottom: 1px dotted;
     cursor: pointer;
