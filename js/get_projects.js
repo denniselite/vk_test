@@ -39,7 +39,7 @@ function get_projects() {
                             "<td align='center'>" + data.all[i].id + "</td>" +
                             "<td>" + data.all[i].desc + "</td>" +
                             "<td align='center'>" + data.all[i].price + "</td>" +
-                            "<td align='center'><input class='make_project_button' type='button' value='Выполнить' onclick='make_project(" + data.all[i].id + ")'></td>" +
+                            "<td align='center'>" + project_project_btn + "</td>" +
                             "</tr>";
                     }
                     $("#projects_table").append(html_inner);

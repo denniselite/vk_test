@@ -21,7 +21,7 @@ function get_projects()
         for ($i = 0; $i < count($projects); $i++){
             $projects[$i]['author_name'] = get_name($projects[$i]['author_id']);
             if (empty($projects[$i]['worker_id'])){
-                $projects[$i]['worker_name'] = "Не сделан";
+                $projects[$i]['worker_name'] = "Не определен";
             } else {
                 $projects[$i]['worker_name'] = get_name($projects[$i]['worker_id']);
             }
