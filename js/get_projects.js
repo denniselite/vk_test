@@ -20,13 +20,18 @@ function get_projects() {
             if (count_all !== data.all.length) {
                 for (var i = count_all; i < data.all.length; i++) {
                     var html_inner;
+                    var project_project_btn = "" +
+                        "<input class='make_project_button' type='button' value='Выполнить' onclick='make_project(" + data.all[i].id + ")'>";
+                    if (data.my_id ===  data.all[i].author_id){
+                        project_project_btn = "Мой проект";
+                    }
                     if (i % 2 == 0) {
                         html_inner = "" +
                             "<tr style='background-color:#f1c40f;' id='row"+ data.all[i].id +"'>" +
                             "<td align='center'>" + data.all[i].id + "</td>" +
                             "<td>" + data.all[i].desc + "</td>" +
                             "<td align='center'>" + data.all[i].price + "</td>" +
-                            "<td align='center'><input class='make_project_button' type='button' value='Выполнить' onclick='make_project(" + data.all[i].id + ")'></td>" +
+                            "<td align='center'>" + project_project_btn + "</td>" +
                             "</tr>";
                     } else {
                         html_inner = "" +

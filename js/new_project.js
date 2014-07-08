@@ -20,6 +20,9 @@ $("#create_project").click(function () {
             }
             else if (data == "FALSE_WORKER"){
                 alert('Добавлять проекты может только заказчик');
+            }
+            else if (data == "NO_MONEY"){
+                alert('Недостаточно средств для создания проекта');
             } else {
                 $("#money").empty();
                 $("#money").append(data);

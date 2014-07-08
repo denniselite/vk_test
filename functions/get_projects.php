@@ -16,7 +16,7 @@ function get_projects(){
     } else {
         $data['id'] = $_SESSION['id'];
     }
-    $STH = db_connect("projects")->prepare("SELECT * FROM projects WHERE worker_id = 0 AND author_id != :id");
+    $STH = db_connect("projects")->prepare("SELECT * FROM projects WHERE worker_id = 0");
     $STH->execute($data);
     $STH->setFetchMode(PDO::FETCH_ASSOC);
     $projects = $STH->fetchAll();
@@ -47,6 +47,7 @@ function get_projects(){
             unset($projects['my_work'][$i]['worker_id']);
             unset($projects['my_work'][$i]['author_id']);
         }
+        $projects['my_id'] =  $_SESSION['id'];
     }
     echo json_encode($projects);
 }
