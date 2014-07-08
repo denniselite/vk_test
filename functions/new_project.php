@@ -11,7 +11,7 @@ new_project($_POST['desc'], $_POST['price'], $_SESSION['id']);
 
 function test_cash($user_id, $price)
 {
-    $p = db_connect('projects');
+    $p = db_connect('users');
     $STH = $p->prepare("
     SELECT :price <= (
       SELECT money FROM users WHERE id = :user_id
@@ -22,8 +22,8 @@ function test_cash($user_id, $price)
     );
     $STH->execute($data);
     $STH->setFetchMode(PDO::FETCH_ASSOC);
-    $data = $STH->fetchAll();
-    if ($data[0]['result'] == '1'){
+    $data = $STH->fetch();
+    if ($data['result'] == 1){
         return true;
     } else{
         return false;
@@ -33,7 +33,7 @@ function test_cash($user_id, $price)
 function new_project($desc, $price, $user_id)
 {
     ini_set('display_errors', 1);
-    if (test_cash($user_id, $price)) {
+    if (!test_cash($user_id, $price)) {
         echo "NO_MONEY";
     } else if (empty($user_id)) {
         echo "FALSE_AUTH";
