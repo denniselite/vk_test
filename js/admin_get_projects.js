@@ -26,7 +26,9 @@ function admin_get_projects() {
                             "<td align='center'>" + data[i].price + "</td>" +
                             "<td>" + data[i].author_name + "</td>" +
                             "<td>" + data[i].worker_name + "</td>" +
-                            "<td align='center'><input class='make_project_button' type='button' value='Удалить' onclick='delete_project(" + data[i].id + ")'></td>" +
+                            "<td align='center'>" +
+//                            "<input class='make_project_button' type='button' value='Удалить' onclick='delete_project(" + data[i].id + ")'>" +
+                            "</td>" +
                             "</tr>";
                     } else {
                         html_inner = "" +
@@ -36,7 +38,9 @@ function admin_get_projects() {
                             "<td align='center'>" + data[i].price + "</td>" +
                             "<td>" + data[i].author_name + "</td>" +
                             "<td>" + data[i].worker_name + "</td>" +
-                            "<td align='center'><input class='make_project_button' type='button' value='Удалить' onclick='delete_project(" + data[i].id + ")'></td>" +
+                            "<td align='center'>" +
+//                            "<input class='make_project_button' type='button' value='Удалить' onclick='delete_project(" + data[i].id + ")'>" +
+                            "</td>" +
                             "</tr>";
                     }
                     $("#projects_table").append(html_inner);

@@ -93,7 +93,7 @@ input[type="text"], input[type="password"]{
     text-align: center;
 }
 .new_projects_fields .desc{
-    width: 170px;
+    width: 190px;
     padding-left: 20px;
 }
 input[type="text"]:hover, input[type="text"]:active{
@@ -152,10 +152,10 @@ input[type="text"]:hover, input[type="text"]:active{
     background-color: #27ae60;
 }
 
-.role{
+.role, #money{
     border-bottom: 1px dotted;
     cursor: pointer;
 }
-.role:hover{
+.role:hover, #money:hover{
     color: #fff;
 }

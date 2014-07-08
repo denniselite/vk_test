@@ -16,6 +16,7 @@ function make_project(id){
         dataType: 'text',
         data: post_data,
         success: function (data) {
+            console.log(data);
             if (data == "FALSE_WORKER"){
                 alert('Только исполнитель может брать заказы');
             }
