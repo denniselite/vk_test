@@ -10,8 +10,8 @@
 function db_connect($db_name)
 {
     $host = "localhost";
-    $user = "root";
-    $password = "kavelin1245";
+    $user = "пользователь";
+    $password = "пароль";
     $db = $db_name;
 
     try {
